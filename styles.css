@@ -1,38 +1,101 @@
+html {
+  max-width: 100%;
+  background-color: slategrey;
+}
+
 body {
-  background: #ddd;
+  background: rgb(255, 255, 255);
   margin: 1rem;
   padding: 1rem;
-  max-width: 500px;
+  max-width: 70%;
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
 }
 
 nav {
-	border-bottom: 2px solid orange;
+  background-color: whitesmoke;
+  width: 100%;
+  border-bottom: 2px solid orange;
 }
 
 ol {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .crumb {
-	margin-right: 2em;
-	display: inline;
+  margin-right: 2em;
+  display: inline;
 }
 
 a {
-	color: orange;
+  color: rgb(54, 53, 51);
 }
 
 a:visited {
-	color: crimson;
+  color: rgb(89, 28, 111);
 }
 
-
 input {
-	display: block;
+  display: block;
 }
 
 img {
-	max-width: 300px;
+  max-width: 300px;
+  border-radius: 50%;
+}
+/* buttons */
+.color,
+.place,
+.ritual {
+  background-color: rgb(255, 247, 6);
+  padding: 12px 28px;
+}
+
+footer {
+  max-width: 100%;
+  background-color: whitesmoke;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+.flexbox-header {
+  background-color: #4f7985;
+  border-radius: 5px;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+.flexbox-nav {
+  overflow: hidden;
+  background-color: whitesmoke;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.flexbox-footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+.flexbox-main {
+  position: static;
+  background-color: bisque;
+  border-radius: 5px;
+  left: 0;
+  max-width: 60%;
+}
+.flexbox-side {
+  position: relative;
+  align-self: flex-end;
+  background-color: rgb(187, 192, 162);
+  border-radius: 5px;
+  max-width: 38%;
 }
